@@ -1,0 +1,17 @@
+Todo en el back, son modelos
+crear model para user (hay uno creado pero hay que cambiarlo)(el id tiene que ser unico)con (@id,@default, uui1d)
+crear nuevo model para account en el schema.prisma que tenga como campo lo que dice
+la imagen de ds(id tiene que ser unico).
+crear modelo para las transferencias con nombre transfer con los campos de la imagen
+
+para que con userid se haga referncia al user usar "user User @relation(fields: [userId], references:[Id]
+
+los "@" son atributos para diferentes cosas (buscar en prismajs)
+
+prop uuid para que sea unico
+
+
+prismajs para ejemplos
+
+si sale error de ambiguedad es por el nombre de los @relations
+luego hay que separar las transferencias entre las que se envian y las que se reciven

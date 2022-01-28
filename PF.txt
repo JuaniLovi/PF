@@ -1,0 +1,32 @@
+COMO HACER EL PROYECTO FINAL???
+
+
+
+MODAL: UNA CARD QUE ESTA SOBRE TODO LO DEMAS
+importamos react
+
+creamos el modal con arrow function
+
+para que aparezca delante de todo usamos= "position:absolute; tambien se le puede poner top, botton (que no es lo mismo que BUTTON), left,
+rigth para moverlo dependiendo de la distancia de cada costado.
+
+Esto nos devuelve con un return un div que va a tener de classname modal-container que es la parte de afuera del modal
+(para centrar usamos display: grid y place-content:center para centrar un solo objeto)
+
+tiene que haber algun valor para mostarlo o no, para eso usamos la propiedad vivible al lado de la const modal entre ({})
+
+dentro del login creamos un hook de visible, set visible y un UseState que empieza en false
+
+para poder abrirlo usamos un boton que tenga un setModalVisible con value true (true)
+y agregamos un modal visible ={modalVisible} con un onClose con la setModalVisible con valor false (false)
+
+
+"visible &&" para que si es true lo muestre y si es false no 
+
+al div de modalcontainer le agregamos un oncklick para cerrar el modal
+dentro del div de modal card agregamos un onclick={(e)=>e.stopPrapagation()} para que si tocdamos el modal no se cierre
+
+
+SIEMPRE IMPORTAR!!!!!!
+
+
